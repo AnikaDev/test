@@ -136,7 +136,7 @@ c = 'apple 12'
 #     if i % 50 == 0:
 #         print('\n', i, ': ', end='')
 
-# a = 'white cat black cat'
+a = 'white cat black cat'
 # print(a[0])
 # print(a[-1])
 # print(a[6:9])  # с 6 по 8 символы
@@ -145,7 +145,7 @@ c = 'apple 12'
 # print(a[-3:])
 # print(a[6:16:2])  # с 6 по 15 символы с шагом 2
 # print(a[::-1])  # развернуть строку
-# print(' '.join(a[6:16:2]))
+print(' '.join(a[6:16:2]))
 
 # s = 'шалаш'
 # print('Палиндром' if s[::-1] == s else 'Не палиндром')
