@@ -22,3 +22,4 @@
 #     a = int(y[0])
 #     b = int(y[1])
 # print(-b/a)
+print("Asww qw fftt ygy".split(' ',1))
