@@ -1,12 +1,13 @@
-﻿
-# def f(n):
-#     if f(1):
-#         return 1
-#     if n >= 2:
-#         return f(n - 1) - g(n - 1)
-# def g(n):
-#     if g(1):
-#         return 1
-#     if n >= 2:
-#         return f(n - 1) - g(n - 1)
-# print(f(5))
+﻿count = 0
+ma = -10**10
+with open("17-8.txt") as F:
+    prev = int(F.readline())
+    while True:
+        s = F.readline()
+        if not s: break
+        x = int(s)
+        if (x % 7 == 0 or prev % 7 == 0) and (abs(x + prev) % 100 == 19):
+           ma = max(ma, x + prev)
+           count += 1
+        prev = x
+print(count, ma)

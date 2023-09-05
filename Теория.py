@@ -27,21 +27,21 @@
 # print(7 % 3)  # остаток от деления
 # print(divmod(7, 3))  # (//, %)
 # print(abs(-7))  # модуль числа
-
+#
 # if условие1:      если
 #     блок кода 1
 # elif условие2:    иначе если
 #     блок кода 2
 # else:             иначе при всех остальных условиях
 #     блок кода 3
-
+#
 # > больше
 # < меньше
 # >= больше или равно
 # <= меньше или равно
 # == равно
 # != не равно
-
+#
 # x = int(input('Введите число: '))
 # if x > 0:
 #     print('У вас положительное число')
@@ -49,21 +49,24 @@
 #     print('У вас отрицательное число')
 # else:
 #     print('У вас ноль')
-
+#
 # Логические операции
 # a and b   логическое И, True, если оба True
 # a or b    логическое ИЛИ, True, если хотя бы один равен True
 # not a     логическое НЕ  not True = False   not False = True
-
+#
 # a, b = -5, (0,)
 # if a < 0 and b:
 #     print('cat')
-
+#
 # False: False, 0, None, [], (), '', {}
 # True: True, != 0, len(iterable)>0
-
+#
 # Строки str
-# a = 'white cat blACK cat'
+# ())  # состоит ли только из пробельных символов (пробел, табуляция \t, новая строка \n и т.д)
+# print(a.islower())  # состоит ли только из букв нижнего регистра
+# print(a.isupper())  # состоит ли только из букв верхнего регистра
+# print(a.istitle())  a = 'white cat blACK cat'
 # b = 'dog'
 # c = 7
 # print(a + b)  # конкатенация
@@ -97,30 +100,27 @@
 # print(a.isalpha())  # состоит ли только из букв
 # print(a.isdigit())  # состоит ли только из цифр
 # print(a.isalnum())  # состоит ли только из букв или цифр
-# print(a.isspace())  # состоит ли только из пробельных символов (пробел, табуляция \t, новая строка \n и т.д)
-# print(a.islower())  # состоит ли только из букв нижнего регистра
-# print(a.isupper())  # состоит ли только из букв верхнего регистра
-# print(a.istitle())  # начинаются ли слова в строке с заглавных букв
+# print(a.isspace# начинаются ли слова в строке с заглавных букв
 #
 # fio = input('Введите ваше ФИО: ')
 # if fio.istitle():
 #     print(fio)
 # else:
 #     print(fio.title())
-
+#
 # print(fio if fio.istitle() else fio.title())
-
+#
 # Тернарный оператор
 # if exression:
 #     on_true
 # else:
 #     on_false
 # on_true if exression else on_false
-
+#
 # a, b = 15, 7
 # small = b if a > b else a
 # print(small)
-
+#
 # print(isinstance(b, (int, float, complex)))  # проверяет принадлежит ли переменная к тому или иному типу
 # print(type(b))
 # print('***apple*****'.strip('*'))  # удаляет с начала и конца строки указанные символы
@@ -135,7 +135,7 @@
 #     print(chr(i), end=' ')
 #     if i % 50 == 0:
 #         print('\n', i, ': ', end='')
-
+#
 # a = 'white cat black cat'
 # print(a[0])
 # print(a[-1])
@@ -146,7 +146,7 @@
 # print(a[6:16:2])  # с 6 по 15 символы с шагом 2
 # print(a[::-1])  # развернуть строку
 # print(' '.join(a[6:16:2]))
-
+#
 # s = 'шалаш'
 # print('Палиндром' if s[::-1] == s else 'Не палиндром')
 #
@@ -206,10 +206,10 @@
 # print(id(a[2]), id(a2[2]))
 # a[0] = 7
 # print(a, a2)
-
+#
 #
 # print(list('cat'))
-
+#
 # Множество set
 # a = ['cat', 2, 'dog', 'cow', 3.0, 'apple', 'dog', 'cow']
 # b = set(a)
@@ -272,7 +272,7 @@
 #
 # a2 = a.copy()  # копия множества
 # a2.clear()  # очистить множество
-
+#
 # Основные способы форматирования строк
 # name = 'Alice'
 # age = 20
@@ -302,13 +302,13 @@
 # print(f'{"Выравнивание":*^20}')
 # print(f'{"Выравнивание":*>20}')
 # print(f'{"Выравнивание":*<20}')
-
+#
 # print(5, 7, end='++++')  # end определяет чем заканчивается строка
 # print(5, 7, sep='***')  # sep определяет, что стоит между переменными
 #
 # print('\\n')  # экранирование через \
 # print(r'\n')  # сырая строка
-
+#
 # Словари dict
 # a = {'key': 'value', 'Alice': [5, 4, 3, 5]}
 # b = {1: 123, 'key': 345, (1, 2): 789}
@@ -365,19 +365,19 @@
 #
 # z2 = x | y  # объединение словарей python >= 3.9
 # print(z2)
-
+#
 # Сортировка словаря по значениям
 # store = {'apple': 40, 'kiwi': 20, 'orange': 70, 'banana': 100}
 # print(sorted(store, key=store.get))
 # print(sorted(['apple', 'kiwi', 'orange', 'banana']))
-
+#
 # Цикл for
 # for переменная in iterable:
 #     тело цикла
 # else:
 #     код выполняется, если цикл завершился нормально (без break)
-
-a = [1, 2, 7, 12, 14, 34, 57]
+#
+# a = [1, 2, 7, 12, 14, 34, 57]
 # for x in a:
 #     if x == 12:
 #         continue  # досрочное завершение итерации
@@ -386,23 +386,23 @@ a = [1, 2, 7, 12, 14, 34, 57]
 #     print(x)
 # else:
 #     print('cat')
-
+#
 # for i in range(10):
 #     print('apple')
-
+#
 # print(*range(2, 7, 2))
 #
 # for i in range(2, 7, 2):
 #     print(i)
-
+#
 # for i in enumerate(a):  # enumarate возвращает (индекс, элемент)
 #     print(i[0] * i[1])
 #
 # for x, y in enumerate(a, 10):  # можно указать с чего начинать индексацию
 #     print(x, y)
-
+#
 # print(*enumerate(a))
-
+#
 # Списковое включение list comprehension "генератор списка"
 # z = []
 # for i in range(1, 11):
@@ -413,31 +413,31 @@ a = [1, 2, 7, 12, 14, 34, 57]
 #
 # print([i ** 2 for i in range(1, 11) if i % 2 == 0])
 # print({i: i ** 2 for i in range(1, 11)})
-
-a = 'Привет, мир!'
-for i in a:
-    print(i)
-
-a = 'Привет, мир!'
-for i in range(1, 11):
-    print(a)
-
-i = 1
-while i <= 10:
-    print(i)
-    i = i + 1
-
-i = 1
-while i <= 10:
-    print(i)
-    i = i + 1
-    break
-
-i = 1
-while i <= 10:
-    if i != 5:
-        print(i)
-    i = i + 1
-    continue
-
-
+#
+# a = 'Привет, мир!'
+# for i in a:
+#     print(i)
+#
+# a = 'Привет, мир!'
+# for i in range(1, 11):
+#     print(a)
+#
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i = i + 1
+#
+# i = 1
+# while i <= 10:
+#     print(i)
+#     i = i + 1
+#     break
+#
+# i = 1
+# while i <= 10:
+#     if i != 5:
+#         print(i)
+#     i = i + 1
+#     continue
+#
+#
